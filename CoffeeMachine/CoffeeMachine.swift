@@ -23,7 +23,7 @@ class CoffeeMachine: NSObject {
     }
     
     
-    
+
     func spendWhater() {
        whaterPortions = whaterPortions - 1
     }
@@ -40,28 +40,39 @@ class CoffeeMachine: NSObject {
        donePortionsNumber = donePortionsNumber - 1
     }
     
-    func checkCoffee() {
+    func checkCoffee() -> Bool {
+        var noCofee = true
         if coffeePortions == 0 {
-            print("please, add coffe")
+            noCofee = false
+            return noCofee
         }
+        return noCofee
     }
     
-    func checkWhater() {
+    func checkWhater() -> Bool {
+        var noWhater = true
         if whaterPortions == 0 {
-            print("please, add whater")
+            noWhater = false
         }
+        return noWhater
     }
     
-    func checkMilk() {
+    func checkMilk() -> Bool {
+        var noMilk = true
         if milkPortions == 0 {
-            print("please, add milk")
+            noMilk = false
+            return noMilk
         }
+        return noMilk
     }
     
-    func checkDonePortionsNumber() {
+    func checkDonePortionsNumber() -> Bool {
+        var needToClean = true
         if donePortionsNumber == 0 {
-            print("please, clean me")
+            needToClean = false
+            return needToClean
         }
+        return needToClean
     }
     
     func espresso() {
@@ -69,7 +80,6 @@ class CoffeeMachine: NSObject {
         spendCofee()
         donePortion()
     }
-    
     
     
     
