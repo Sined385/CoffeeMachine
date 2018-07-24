@@ -12,6 +12,7 @@
 		04C1942B2107BF6100D939C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C194292107BF6100D939C4 /* Main.storyboard */; };
 		04C1942D2107BF6200D939C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C1942C2107BF6200D939C4 /* Assets.xcassets */; };
 		04C194302107BF6200D939C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C1942E2107BF6200D939C4 /* LaunchScreen.storyboard */; };
+		04C194382107BF7A00D939C4 /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C194372107BF7A00D939C4 /* CoffeeMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		04C1942C2107BF6200D939C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C1942F2107BF6200D939C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C194312107BF6200D939C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C194372107BF7A00D939C4 /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,9 @@
 		04C194242107BF6100D939C4 /* CoffeeMachine */ = {
 			isa = PBXGroup;
 			children = (
-				04C194252107BF6100D939C4 /* AppDelegate.swift */,
+				04C194372107BF7A00D939C4 /* CoffeeMachine.swift */,
 				04C194272107BF6100D939C4 /* ViewController.swift */,
+				04C194252107BF6100D939C4 /* AppDelegate.swift */,
 				04C194292107BF6100D939C4 /* Main.storyboard */,
 				04C1942C2107BF6200D939C4 /* Assets.xcassets */,
 				04C1942E2107BF6200D939C4 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				04C194282107BF6100D939C4 /* ViewController.swift in Sources */,
 				04C194262107BF6100D939C4 /* AppDelegate.swift in Sources */,
+				04C194382107BF7A00D939C4 /* CoffeeMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
