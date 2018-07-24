@@ -81,7 +81,24 @@ class CoffeeMachine: NSObject {
         donePortion()
     }
     
+    func capuccino() {
+        spendWhater()
+        spendCofee()
+        spendMilk()
+        donePortion()
+    }
     
+    func americano() {
+        spendWhater()
+        spendWhater()
+        spendCofee()
+        donePortion()
+    }
+    
+    
+    func addWhater(number: Int) {
+        whaterPortions = number
+    }
     
     
     

@@ -16,12 +16,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         currentState()
-        theInformationLabel.text = "choose your drink"
         checkCondition()
-        
-        
+    }
+    
+    @IBAction func addWhaterButton() {
         
     }
+    
+    @IBOutlet weak var addWhaterNumber: UITextField!
     
     
     
@@ -38,6 +40,35 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func theAmericanoButton() {
+        currentState()
+        if checkCondition() == true {
+            coffee.americano()
+            theInformationLabel.text = "your americano"
+            currentState()
+        }
+        else {
+            currentState()
+            return
+        }
+        
+    }
+    
+    @IBAction func theCapuchinoButton() {
+        currentState()
+        if checkCondition() == true {
+            coffee.capuccino()
+            theInformationLabel.text = "your capuchino"
+            currentState()
+        }
+        else {
+            currentState()
+            return
+        }
+        
+    }
+    
+    
     func currentState() {
         theWhaterPortionsLabel.text = String(coffee.whaterPortions)
         coffeePortionsLabel.text = String(coffee.coffeePortions)
@@ -46,6 +77,8 @@ class ViewController: UIViewController {
     }
     
     func checkCondition() -> Bool {
+        
+        theInformationLabel.text = "choose your drink"
         
         var toMakeCofee = true
         
